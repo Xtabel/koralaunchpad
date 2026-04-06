@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'AvertaPE', sans-serif;
+}
+
+@font-face {
+  font-family: 'AvertaPE';
+  src: url('./assets/fonts/AvertaPE-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvertaPE';
+  src: url('./assets/fonts/AvertaPE-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvertaPE';
+  src: url('./assets/fonts/AvertaPE-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvertaPE';
+  src: url('./assets/fonts/AvertaPE-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvertaPE';
+  src: url('./assets/fonts/AvertaPE-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvertaPE';
+  src: url('./assets/fonts/AvertaPE-Black.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvertaPE';
+  src: url('./assets/fonts/AvertaPE-BlackItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
