@@ -12,6 +12,8 @@ export const SIDEBAR_CONFIG = {
       path: "/submit-idea",
       icon: <SidebarIcons.IdeaSubmissionIcon />,
     },
+  ],
+  management: [
     {
       title: "Review & Score",
       path: "/review-and-score",
@@ -23,5 +25,4 @@ export const SIDEBAR_CONFIG = {
       icon: <SidebarIcons.PrioritizeIdeaIcon />,
     },
   ],
-  management: [],
 };
