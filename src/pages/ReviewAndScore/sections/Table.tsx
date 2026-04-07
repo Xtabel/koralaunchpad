@@ -12,7 +12,6 @@ import {
   type IdeaRow,
   type ReviewStatus,
 } from "@/_mock/reviewAndScore";
-import ReviewAvatars from "./ReviewAvatars";
 import ScoreCell from "./ScoreCell";
 import ActionCell from "./ActionCell";
 import StatusChip from "./StatusChip";
