@@ -2,7 +2,7 @@
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 export const StyledButton = styled(Button)(
-  ({ theme, loading }) => ({
+  ({ theme }) => ({
     borderRadius: "8px",
     // boxShadow:
     //   variant !== "outlined" && variant !== "text"
@@ -14,12 +14,6 @@ export const StyledButton = styled(Button)(
     // [theme.breakpoints.up("md")]: {
     //   fontSize: "12px",
     // },
-
-  ...(!loading && {
-      "&.Mui-disabled": {
-        color: theme.palette.text.disabled,
-      },
-    }),
     
     "& .MuiButton-startIcon": {
       fontSize: "10px",

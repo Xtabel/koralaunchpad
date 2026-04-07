@@ -84,8 +84,8 @@ const EmptyCard = ({
         <Box display="flex" gap={2} mt={1}>
           {buttonText && (
             <CustomButton
-              startIcon={!noStartIcon && <AddIcon />}
-              sx={{ px: "20px", py: "10px", fontWeight: 400 }}
+              startIcon={!noStartIcon && <AddIcon sx={{color:'white !important'}} />}
+              sx={{ px: "20px", py: "10px", fontWeight: 400, fontSize:'12px' }}
               onClick={onClick}
               style={style?.button}
             >
