@@ -60,7 +60,7 @@ const EmptyCard = ({
         <Typography
           fontSize="14px"
           fontWeight={600}
-          color="primary.main"
+          color="grey.800"
           style={style?.title}
         >
           {title}
