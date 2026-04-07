@@ -109,7 +109,7 @@ const IdeaSubmission = () => {
         <EmptyCard
           title={title}
           subtitle={subtitle}
-          buttonText="Share Ideas"
+          buttonText="Submit Idea"
           onClick={handleOpenModal}
           emptyIcon={icon}
           style={hasSharedIdeaAnonymouslyStyle}
@@ -125,7 +125,7 @@ const IdeaSubmission = () => {
         <EmptyCard
           title={title}
           subtitle={subtitle}
-          buttonText="Share Ideas"
+          buttonText="Submit Idea"
           onClick={handleOpenModal}
           emptyIcon={icon}
         />

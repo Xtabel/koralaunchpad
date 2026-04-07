@@ -15,7 +15,7 @@ const AnonymousMessage: React.FC<Props> = ({ onClick }) => {
         Thanks for sharing your idea! It was submitted anonymously, and we
         didn’t store any personal details. You can always share more ideas!!!!
       </Typography>
-      <CustomButton onClick={onClick}>Share Ideas</CustomButton>
+      <CustomButton onClick={onClick}>Submit Idea</CustomButton>
     </Stack>
   );
 };

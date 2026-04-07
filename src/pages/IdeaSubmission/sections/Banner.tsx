@@ -37,7 +37,7 @@ const Banner: React.FC<ShareIdeaBannerProps> = ({ handleOpenModal }) => {
         </Typography>
       }
       description={"Submit an idea, get it scored, and watch the best ones get built."}
-      buttonText="Share Ideas"
+      buttonText="Submit Idea"
       onClick={handleOpenModal}
       bannerImage={ideaBanner}
     />

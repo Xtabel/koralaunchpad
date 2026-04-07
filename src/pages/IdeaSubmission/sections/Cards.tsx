@@ -97,7 +97,7 @@ const Cards: React.FC<CardsProps> = ({
               ? "There are no ideas to display at the moment"
               : `No ideas match your search "${searchValue}"`
           }
-          buttonText={isSearchEmpty ? "Share Ideas" : undefined}
+          buttonText={isSearchEmpty ? "Submit Idea" : undefined}
           onClick={isSearchEmpty ? onOpenModal : undefined}
           emptyIcon={<EmptyStates.EmptyIdeaIcon sx={{ fontSize: "100px" }} />}
         />
@@ -163,7 +163,7 @@ const Cards: React.FC<CardsProps> = ({
             onClick={onOpenModal}
             sx={{ p: 1.5 }}
           >
-            Share Ideas
+            Submit Idea
           </CustomButton>
         }
       />
