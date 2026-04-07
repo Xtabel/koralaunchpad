@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Avatar, Box, Menu, MenuItem, ListItemIcon, Typography } from "@mui/material";
+import { Avatar, Box, MenuItem, ListItemIcon, Typography } from "@mui/material";
 import { LogoutIcon } from "@/assets/icons";
 import { useNavigate } from "react-router-dom";
 import { avatar } from "@/assets";
+import { MenuPopover } from "@/components/ui";
 
 // ── Dummy user — swap for real auth later ──────────────────
 const DUMMY_USER = {
@@ -41,14 +42,14 @@ const ProfileMenu: React.FC = () => {
         {DUMMY_USER.initials}
       </Avatar>
 
-      <Menu
+      <MenuPopover
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         PaperProps={{
-          elevation: 2,
+          elevation: 0,
           sx: {
             mt: 1,
             minWidth: 180,
@@ -78,7 +79,7 @@ const ProfileMenu: React.FC = () => {
             Log out
           </Typography>
         </MenuItem>
-      </Menu>
+      </MenuPopover>
     </>
   );
 };
