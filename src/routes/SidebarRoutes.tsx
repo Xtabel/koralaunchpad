@@ -1,26 +1,26 @@
-import { FirstWeatherIcon } from "@/assets";
+import { SidebarIcons } from "@/assets/icons/SidebarIcons";
 
 export const SIDEBAR_CONFIG = {
   main: [
     {
       title: "Dashboard",
       path: "/dashboard",
-      icon: { default: FirstWeatherIcon, active: FirstWeatherIcon },
+      icon: <SidebarIcons.DashboardIcon />,
     },
     {
       title: "Submit an Idea",
       path: "/submit-idea",
-      icon: { default: FirstWeatherIcon, active: FirstWeatherIcon },
+      icon: <SidebarIcons.IdeaSubmissionIcon />,
     },
     {
       title: "Review & Score",
       path: "/review-and-score",
-      icon: { default: FirstWeatherIcon, active: FirstWeatherIcon },
+      icon: <SidebarIcons.ReviewandScoreIcon />,
     },
     {
       title: "Prioritise Ideas",
       path: "/prioritise-ideas",
-      icon: { default: FirstWeatherIcon, active: FirstWeatherIcon },
+      icon: <SidebarIcons.PrioritizeIdeaIcon />,
     },
   ],
   management: [],

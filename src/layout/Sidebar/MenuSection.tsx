@@ -34,16 +34,25 @@ const StyledListItem = styled(ListItemButton)<{
 }));
 
 const StyledListItemIcon = styled(ListItemIcon)({ height: 20, minWidth: 30 });
-
 const styles = {
   activeRoot: {
-    color: "primary.main",
-    bgcolor: "grey.70",
+    bgcolor: "primary.light",
     borderRadius: "10px",
+    position: "relative",
+    "&::before": {
+      content: '""',
+      position: "absolute",
+      left: -16, // pulls it to the edge (accounts for the ml:2 padding on the parent Box)
+      top: "50%",
+      transform: "translateY(-50%)",
+      height: "60%",
+      width: "3px",
+      bgcolor: "primary.main",
+      borderRadius: "0 4px 4px 0",
+    },
   },
   activeSub: {
-    color: "primary.main",
-    bgcolor: "grey.70",
+    bgcolor: "primary.light",
     borderRadius: "10px",
   },
   activeIcon: { color: "primary.main" },
@@ -68,9 +77,12 @@ function MenuItem({ item, active }: MenuItemProps) {
       >
         <StyledListItemIcon sx={isActiveRoot ? styles.activeIcon : undefined}>
           {icon &&
-            (isActiveRoot
-              ? React.cloneElement(<icon.active />, { sx: iconSx })
-              : React.cloneElement(<icon.default />, { sx: iconSx }))}
+            React.cloneElement(icon as React.ReactElement<{ sx?: object }>, {
+              sx: {
+                ...iconSx,
+                ...(isActiveRoot ? { color: "primary.main" } : {}),
+              },
+            })}
         </StyledListItemIcon>
         <ListItemText disableTypography primary={title} />
         {info && info}
@@ -123,14 +135,12 @@ export default function MenuSection({
             sx={{
               paddingLeft: 2.5,
               color: "text.secondary",
-              display: "block", // caption is inline by default — force block
-              textAlign: "left", // override any inherited centering
+              display: "block",
+              textAlign: "left",
             }}
           >
             MAIN
           </Typography>
-
-          {/* <Typography variant="caption" sx={{ paddingLeft: 2.5, color: "text.secondary" }}>MAIN</Typography> */}
         </Box>
         {menuConfig.main.map((item) => (
           <MenuItem key={item.title} item={item} active={match} />

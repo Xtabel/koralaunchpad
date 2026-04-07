@@ -1,3 +1,5 @@
+import type { ReactElement } from "react";
+
 export interface drawerwidthProps {
   drawerwidth: number;
 }
@@ -24,10 +26,7 @@ export interface MenuItemProps {
 export interface MenuItem {
   title: string;
   path: string;
-  icon?: {
-    default: React.ComponentType<{ sx?: object }>;
-    active: React.ComponentType<{ sx?: object }>;
-  };
+  icon?: ReactElement;
     requiresRegistration?:boolean, 
   requiresApproval?:boolean,
   info?: React.ReactNode;
