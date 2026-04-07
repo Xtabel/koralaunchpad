@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { Avatar, Box, Menu, MenuItem, ListItemIcon, Typography } from "@mui/material";
 import { LogoutIcon } from "@/assets/icons";
 import { useNavigate } from "react-router-dom";
+import { avatar } from "@/assets";
 
 // ── Dummy user — swap for real auth later ──────────────────
 const DUMMY_USER = {
   name: "Amara Kelechi",
   initials: "AK",
+  avatarUrl: avatar,
 };
 
 const ProfileMenu: React.FC = () => {
@@ -33,6 +35,7 @@ const ProfileMenu: React.FC = () => {
           fontSize: "13px",
           fontWeight: 700,
         }}
+        src={DUMMY_USER.avatarUrl}
         onClick={handleOpen}
       >
         {DUMMY_USER.initials}
