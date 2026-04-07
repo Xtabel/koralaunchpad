@@ -150,7 +150,7 @@ const Modal = (props: Props) => {
   const isMobile = window.innerWidth <= 768;
 
   const modalConfig = {
-    title: isViewMode ? "View Idea" : "Idea Bank",
+    title: isViewMode ? "View Idea" : "Idea Launchpad",
     subtitle: isViewMode
       ? "Here are the details of the idea shared"
       : "Kindly fill in the details below to share your wonderful ideas",

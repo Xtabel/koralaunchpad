@@ -149,7 +149,7 @@ const Cards: React.FC<CardsProps> = ({
   return (
     <Background sx={{ padding: "20px" }}>
       <SetupOverview
-        title="Idea Bank"
+        title="Idea Launchpad"
         badgeCount={filteredCards?.length || 0}
         showSearch
         searchValue={searchValue}

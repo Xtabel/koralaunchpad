@@ -27,7 +27,7 @@ const IdeaSubmission = () => {
 
   const title = hasSharedIdeaAnonymously
     ? "Your idea has been shared successfully"
-    : "Idea Bank";
+    : "Idea Launchpad";
 
   const subtitle = hasSharedIdeaAnonymously
     ? "Thanks for sharing your idea! It was submitted anonymously, and we didn't store any personal details. You can always share more ideas!"
