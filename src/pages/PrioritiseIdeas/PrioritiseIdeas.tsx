@@ -6,14 +6,13 @@ import PrioritiseIdeasTable from "./sections/Table";
 
 const PrioritiseIdeas = () => {
   const handleActionClick = (row: PrioritiseRow) => {
-    // TODO: wire up action modal/drawer when ready
     console.log("Action clicked:", row.ideaTitle);
   };
 
   return (
     <Stack spacing={3}>
       <PrioritiseIdeasStats />
-      <PrioritiseIdeasTable onActionClick={handleActionClick} />
+      <PrioritiseIdeasTable onApprove={handleActionClick} />
     </Stack>
   );
 };

@@ -162,7 +162,7 @@ const PrioritiseIdeasTable: React.FC<PrioritiseIdeasTableProps> = ({
       minWidth: 130,
       renderCell: (_, row) => (
         <StatusChip
-          status=""
+          status="Inactive"
           displayText={row.category}
           customColor={CATEGORY_CHIP_COLOR}
         />
@@ -186,7 +186,7 @@ const PrioritiseIdeasTable: React.FC<PrioritiseIdeasTableProps> = ({
       minWidth: 140,
       renderCell: (_, row) => (
         <StatusChip
-          status=""
+          status="Inactive"
           displayText={row.rankLabel}
           customColor={RANK_COLORS[row.rankLabel]}
         />

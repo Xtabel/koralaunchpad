@@ -7,6 +7,7 @@ import IdeaReviewTable from "./sections/Table";
 
 const ReviewAndScore: React.FC = () => {
   const [selectedIdea, setSelectedIdea] = useState<IdeaRow | null>(null);
+  console.log("Selected idea for scoring:", selectedIdea);
 
   const handleScoreClick = (row: IdeaRow) => {
     setSelectedIdea(row);
